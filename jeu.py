@@ -67,7 +67,7 @@ class Jeu:
 				print(f"{player.name} est plus rapide. Il inflige {AttP - AttC} à {monster.kind}.\nIl lui reste {monster.hp} PV.")
 			
 			#Si l'attaque du monstre est plus forte que celle du perso
-			elif AttC < AttP:
+			elif AttP < AttC:
 				player.hp-=(AttC - AttP)
 				print(f"{monster.kind} est plus rapide. Il inflige {AttP - AttC} à {player.name}.\nIl lui reste {player.hp} PV.")
 
